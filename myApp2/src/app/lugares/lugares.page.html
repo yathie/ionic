@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>lugares</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--scroll-->
+  <ion-list>
+    <!--[routerLink]="['/home']" = ao clicar em qualquer item da lista redireciona para home, neste caso-->
+    <ion-item *ngFor="let l of lugares" [routerLink]="['/lugares/', l.id]" >
+      <ion-avatar slot="start">
+        <ion-img [src]='l.imgURL'></ion-img>
+      </ion-avatar>
+      {{l.titulo}}
+    </ion-item>
+  </ion-list>
+</ion-content>
