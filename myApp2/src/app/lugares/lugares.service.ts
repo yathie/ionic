@@ -53,7 +53,7 @@ export class LugaresService {
   recebendo titulo e imagem
   e utilizando interface
   */
-  addLugares(titulo:string,img:string){
+  addLugar(titulo:string,img:string){
     this.lugares.push(
       {
         titulo,

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <!--botao de voltar-->
+    <ion-buttons>
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Adicionas novo lugar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content>
+          <ion-input type="text" placeholder="Título" #titulo ></ion-input>
+          <ion-input type="text" placeholder="URL da imagem" value="https://cdn.pixabay.com/photo/2020/05/06/20/37/couple-5139112_960_720.png" #imgURL ></ion-input>
+          <ion-button (click)="salvarDados(titulo, imgURL)" expand="block" fill="clear" shape="round">
+            Salvar
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

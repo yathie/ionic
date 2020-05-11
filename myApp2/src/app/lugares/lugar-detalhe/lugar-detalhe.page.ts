@@ -33,7 +33,7 @@ export class LugarDetalhePage implements OnInit {
     })
   }
 
-  /*
+  
   async removeLugar(){
     //console.log('removeu')
 
@@ -54,7 +54,7 @@ export class LugarDetalhePage implements OnInit {
     });
     await alertaEl.present()
   }
-  */
+  /*
   removeLugar(){
     this.alertaC.create({
       //criar um alerta eh um metodo assincrono
@@ -71,6 +71,6 @@ export class LugarDetalhePage implements OnInit {
         }}
       ],
     });
-  }   
-
+  }  
+  */ 
 }

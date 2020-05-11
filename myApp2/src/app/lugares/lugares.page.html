@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar color='success'>
     <ion-title>lugares</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -15,4 +16,11 @@
       {{l.titulo}}
     </ion-item>
   </ion-list>
+  <!--botao de adicionar novo item-->
+  <ion-fab vertical="bottom" horizontal="center" >
+    <ion-fab-button color="danger" (click)="novoLugar()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

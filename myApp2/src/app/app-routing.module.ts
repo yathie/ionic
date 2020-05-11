@@ -8,7 +8,8 @@ const routes: Routes = [
   },
   {//rota principal - primeira rota a ser definida
     path: '',
-    redirectTo: 'home', //se trocar por 'lugares', esta sera a pagina principal
+    //redirectTo: 'home', //se trocar por 'lugares', esta sera a pagina principal
+    redirectTo: 'lugares',
     pathMatch: 'full'
   },
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'lugar-detalhe',
     loadChildren: () => import('./lugares/lugar-detalhe/lugar-detalhe.module').then( m => m.LugarDetalhePageModule)
+  },
+  {
+    path: 'lugar-novo',
+    loadChildren: () => import('./lugares/lugar-novo/lugar-novo.module').then( m => m.LugarNovoPageModule)
   },
 ];
 
