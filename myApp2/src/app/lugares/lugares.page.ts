@@ -13,7 +13,13 @@ export class LugaresPage implements OnInit {
   constructor(private lugarServico:LugaresService) { }
 
   ngOnInit() {
+    //this.lugares=this.lugarServico.getLugares()
+    console.log('on init')
+  }
+
+  ionViewWillEnter(){
     this.lugares=this.lugarServico.getLugares()
+    console.log('will enter')
   }
 
 }

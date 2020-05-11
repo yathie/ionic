@@ -1,10 +1,16 @@
 <ion-header>
   <ion-toolbar color="warning">
+    <!--botao de voltar-->
     <ion-buttons>
-      <!--botao de voltar-->
       <ion-back-button ></ion-back-button>
     </ion-buttons>
     <ion-title>{{lugar.titulo}}</ion-title>
+    <!--botao de remover-->
+    <ion-buttons slot="end">
+      <ion-button (click)="removeLugar()" >
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -22,7 +28,9 @@
     <ion-row>
       <ion-col>
         <ion-list *ngIf="lugar.comentarios && lugar.comentarios.length>0; else semComentario">
-          <h3>mais:</h3>
+          <ion-item>
+            <ion-label>Mais:</ion-label>
+          </ion-item>
           <ion-item *ngFor="let c of lugar.comentarios">
             {{c}}
           </ion-item>
