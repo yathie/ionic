@@ -32,4 +32,7 @@ export class LugaresPage implements OnInit {
     this.router.navigate(['/lugar-novo'])
   }
 
+  irParaHome(){
+    this.router.navigate(['/home'])
+  }
 }
