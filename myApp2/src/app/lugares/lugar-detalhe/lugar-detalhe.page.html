@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>lugar-detalhe</ion-title>
+  <ion-toolbar color="warning">
+    <ion-buttons>
+      <!--botao de voltar-->
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{lugar.titulo}}</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col class="ion-no-padding">
+        <ion-img [src]="lugar.imgURL" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1 class="ion-text-center">{{lugar.titulo}}</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list *ngIf="lugar.comentarios && lugar.comentarios.length>0; else semComentario">
+          <h3>mais:</h3>
+          <ion-item *ngFor="let c of lugar.comentarios">
+            {{c}}
+          </ion-item>
+        </ion-list>
+        <ng-template #semComentario>
+          <h3>Sem mais...</h3>
+        </ng-template>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

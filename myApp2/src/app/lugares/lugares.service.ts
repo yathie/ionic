@@ -25,6 +25,12 @@ export class LugaresService {
       imgURL:'https://img.freepik.com/vetores-gratis/pessoas-vestindo-mascara-no-supermercado_23-2148503783.jpg?size=626&ext=jpg',
       comentarios:['muitas promoções', 'tem tudo o que eu preciso'],
     },
+    {
+      id:'3',
+      titulo:'mercadinho 3',
+      imgURL:'https://img.freepik.com/vetores-gratis/pessoas-vestindo-mascara-no-supermercado_23-2148503783.jpg?size=626&ext=jpg',
+      comentarios:[],
+    },
   ]
 
   constructor() { }
