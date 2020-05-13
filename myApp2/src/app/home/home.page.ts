@@ -13,11 +13,9 @@ export class HomePage implements OnInit{
   constructor(private fotosS:FotosService) {}
 
   ngOnInit(){
-    console.log('ttttt')
     this.fotosS.getFotos().subscribe(
       data=>{
-        console.log(data)
-        //this.fotos=data;
+        this.fotos=data;
       }
     )
   }

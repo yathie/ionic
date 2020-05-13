@@ -12,7 +12,7 @@ export class FotosService {
   constructor(private http:HttpClient) { }
 
   getFotos(){
-    return this.http.get<any>('https://jsonplaceholder.typicode.com/photos?_limit=15')
+    return this.http.get<any>('https://jsonplaceholder.typicode.com/photos?_limit=6')
   }
 
 }

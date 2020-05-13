@@ -2,7 +2,7 @@
   <ion-toolbar>
     <!--botao de voltar-->
     <ion-buttons>
-      <ion-back-button ></ion-back-button>
+      <ion-back-button defaultHref="/lugares"></ion-back-button>
     </ion-buttons>
     <ion-title>
       Olá mundo
@@ -16,10 +16,10 @@
     <ion-card *ngFor="let f of fotos">
       <img [src]="f.thumbnailUrl" >
       <ion-card-content>
-        {{f.title}}
+        Título: {{f.title}}
       </ion-card-content>
       <ion-card-content>
-        {{f.albumId}}
+        Album: {{f.albumId}}
       </ion-card-content>
     </ion-card>
   </ion-list>
