@@ -1,10 +1,23 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content >
+
+  <ion-list>
+    <!--detail deixa  a mostra um indicador de que é
+    clicavel, no android, no ios é padrao esse indicador-->
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.irPara" detail>
+      <ion-icon slot="start" [name]="c.icon"></ion-icon>
+      <ion-label>{{c.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
+
   <ion-buttons>
     <ion-button routerLink="/alert" >
       Alert

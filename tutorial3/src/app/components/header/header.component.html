@@ -1,11 +1,17 @@
-<!--importar os elementos ionic em components.module.ts -->
-<ion-header>
+
+<!--
+  importar os elementos ionic em components.module.ts 
+  ion-no-border - remove a linha q separa o header do body
+
+-->
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="inicio"
       color="danger"
       ></ion-back-button>
     </ion-buttons>
-    <ion-title text-capitalize >{{titulo}}</ion-title>
+    <ion-title class="ion-text-capitalize">{{titulo}}</ion-title>
+  
   </ion-toolbar>
 </ion-header>
