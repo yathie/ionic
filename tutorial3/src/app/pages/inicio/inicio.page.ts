@@ -10,12 +10,12 @@ export class InicioPage implements OnInit {
   /*array de Componente-> interface criada depois desta classe*/
   componentes:any[]=[
     {
-      icon:"american-football",
+      icon:"bonfire-outline",
       nome:"Action",
       irPara:"/action-sheet",
     },
     {
-      icon:"appstore",
+      icon:"skull-outline",
       nome:"Alert",
       irPara:"/alert",
     },
