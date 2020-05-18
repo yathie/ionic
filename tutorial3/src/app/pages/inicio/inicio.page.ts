@@ -19,6 +19,11 @@ export class InicioPage implements OnInit {
       nome:"Alert",
       irPara:"/alert",
     },
+    {
+      icon:"skull-outline",
+      nome:"Avatar",
+      irPara:"/avatar",
+    },
   ]
 
   constructor() { }
