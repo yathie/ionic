@@ -1,0 +1,62 @@
+  <!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "Botões"></app-header>
+
+<ion-content>
+  <!--boteoes simples-->
+  <ion-button expand="block" size="small">
+    Pequeno
+  </ion-button>
+  <ion-button expand="block" size="default">
+    Default
+  </ion-button>
+  <ion-button expand="block" size="large">
+    Grande
+  </ion-button>
+
+  <!--botoes com icon-->
+  <!--top-20, classe feita por mim, está em notoes.page.scss-->
+  <ion-buttons class="top-20">
+    <ion-button>
+      <ion-icon name="heart"></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <!--anchor-->
+  <!--top-20, classe feita por mim, está em notoes.page.scss-->
+  <ion-button class="top-20" expand="block" routerLink="/alert" color="tertiary">
+    anchor - ir para alerta
+  </ion-button>
+
+  <!--ion grid-->
+  <ion-row class="top-20">
+    <ion-col size="4">
+      <ion-button expand="block" color="tertiary">
+        grid1
+      </ion-button>
+    </ion-col>
+    <ion-col size="8">
+      <ion-button expand="block" color="tertiary">
+        grid2
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!--fill-->
+  <ion-button class="top-20" fill="clear" color="danger">
+    Clear
+  </ion-button>
+  <ion-button class="top-20" fill="solid" color="danger">
+    Solid
+  </ion-button>
+  <ion-button class="top-20" fill="outline" color="danger">
+    Outline
+  </ion-button>
+  
+</ion-content>

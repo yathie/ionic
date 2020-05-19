@@ -24,6 +24,11 @@ export class InicioPage implements OnInit {
       nome:"Avatar",
       irPara:"/avatar",
     },
+    {
+      icon:"bonfire-outline",
+      nome:"Botões",
+      irPara:"/botoes",
+    },
   ]
 
   constructor() { }
