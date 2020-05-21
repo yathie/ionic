@@ -1,0 +1,38 @@
+  <!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "cards"></app-header>
+
+<ion-content class="ion-padding">
+  <!--mode='ios' significa que os cards terao a 
+  mesma aparencia que num ios, mesmo se for android-->
+  <ion-card mode="ios" color="warning">
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Awesome content - mode=ios
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item color="light">
+      <ion-icon color="danger" slot="start" name="pin"></ion-icon>
+      <ion-label>Awesome Label</ion-label>
+    </ion-item>
+    <ion-card-content>
+      Awesome content
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-content>
+      Awesome content
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
