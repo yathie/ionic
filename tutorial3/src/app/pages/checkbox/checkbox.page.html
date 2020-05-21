@@ -1,0 +1,25 @@
+  <!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "Checkbox"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item 
+     *ngFor="let d of dados"
+     (click)="onClick(d)"
+     >
+      <ion-label >{{d.nome}}</ion-label>
+      <!-- ngmodel estah entre parenteses pq recebe
+      e emite eventos-->
+      <ion-checkbox 
+       [color]="d.nome"
+       [(ngModel)]="d.selecionado"
+      ></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

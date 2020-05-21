@@ -34,6 +34,11 @@ export class InicioPage implements OnInit {
       nome:"Cartões",
       irPara:"/card",
     },
+    {
+      icon:"bonfire-outline",
+      nome:"Checkbox",
+      irPara:"/checkbox",
+    },
   ]
 
   constructor() { }
