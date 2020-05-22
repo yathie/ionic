@@ -39,6 +39,11 @@ export class InicioPage implements OnInit {
       nome:"Checkbox",
       irPara:"/checkbox",
     },
+    {
+      icon:"calendar",
+      nome:"Datas",
+      irPara:"/datas",
+    },
   ]
 
   constructor() { }

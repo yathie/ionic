@@ -1,0 +1,67 @@
+  <!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "DateTime"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Dados de nascimento</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Data de nasc.</ion-label>
+      <!--
+        display-format eh como sera 
+        mostarada na tela a data
+
+        value - mostra a data de hoje (dataNasc)
+
+        ionChange- dispara qnuando a data muda e
+        nao quando se cancela
+
+        cancelText - o que vai aparecer escrito
+        no botao de cancelar
+      -->
+      <ion-datetime 
+       placeholder="nasc"
+       value="{{dataNasc | date:'yyyy-MM-dd'}}"
+       display-format="DD MMMM YYYY"
+       cancelText="Cancelar!"
+       (ionChange)="mudaData($event)"
+       ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list-header>
+    <ion-label>Restrições</ion-label>
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Min -Max</ion-label>
+    <ion-datetime 
+     display-format="DD.MM.YYYY"
+     min= "2019-11-05"
+     max="2020-01-01"
+     value="{{dataNasc}}"
+    ></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Anos</ion-label>
+    <ion-datetime 
+     display-format="YYYY"
+     min= "2018"
+     max="2021"
+     value="{{dataNasc}}"
+    ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Anos-Picker</ion-label>
+    <ion-datetime 
+     [pickerOptions]="customPickerOp"
+     [(ngModel)]="customData"
+    ></ion-datetime>
+  </ion-item>
+
+</ion-content>
