@@ -44,6 +44,11 @@ export class InicioPage implements OnInit {
       nome:"Datas",
       irPara:"/datas",
     },
+    {
+      icon:"add",
+      nome:"Fab",
+      irPara:"/fab",
+    },
   ]
 
   constructor() { }

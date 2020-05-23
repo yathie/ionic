@@ -1,0 +1,42 @@
+  <!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "Fab"></app-header>
+
+<ion-content>
+  <ion-fab slot="fixed">
+    <ion-fab-button>
+      b1
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <!--lista de botoes-menu-->
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let d of dados; let i=index">
+        item: {{i+1}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
