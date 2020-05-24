@@ -74,7 +74,41 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  //inicio_ cores criadas-usado em fab
+  --ion-color-criado: #eb971a;
+  --ion-color-criado-rgb: 235,151,26;
+  --ion-color-criado-contrast: #000000;
+  --ion-color-criado-contrast-rgb: 0,0,0;
+  --ion-color-criado-shade: #cf8517;
+  --ion-color-criado-tint: #eda131;
+
+  --ion-color-criadodois: #fd67fd;
+  --ion-color-criadodois-rgb: 253,103,253;
+  --ion-color-criadodois-contrast: #ffffff;
+  --ion-color-criadodois-contrast-rgb: 0,0,0;
+  --ion-color-criadodois-shade: #df5bdf;
+  --ion-color-criadodois-tint: #fd76fd;
+} //manter este fecha chaves
+
+.ion-color-criado{
+  --ion-color-base: var(--ion-color-criado) !important;
+  --ion-color-base-rgb: var(--ion-color-criado-rgb) !important;
+  --ion-color-contrast: var(--ion-color-criado-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-criado-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-criado-shade) !important;
+  --ion-color-tint: var(--ion-color-criado-tint) !important;
 }
+
+.ion-color-criadodois{
+  --ion-color-base: var(--ion-color-criadodois) !important;
+  --ion-color-base-rgb: var(--ion-color-criadodois-rgb) !important;
+  --ion-color-contrast: var(--ion-color-criadodois-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-criadodois-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-criadodois-shade) !important;
+  --ion-color-tint: var(--ion-color-criadodois-tint) !important;
+}
+//fim cores criadas-usado em fab
 
 @media (prefers-color-scheme: dark) {
   /*
