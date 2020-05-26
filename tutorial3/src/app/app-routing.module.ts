@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'grids',
     loadChildren: () => import('./pages/grids/grids.module').then( m => m.GridsPageModule)
   },
+  {
+    path: 'scroll-infinito',
+    loadChildren: () => import('./pages/scroll-infinito/scroll-infinito.module').then( m => m.ScrollInfinitoPageModule)
+  },
 ];
 
 @NgModule({

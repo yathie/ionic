@@ -54,6 +54,11 @@ export class InicioPage implements OnInit {
       nome:"Grid",
       irPara:"/grids",
     },
+    {
+      icon:"infinite",
+      nome:"Infinite Scroll",
+      irPara:"/scroll-infinito",
+    },
   ]
 
   constructor() { }
