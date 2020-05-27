@@ -1,0 +1,32 @@
+<!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "input e forms"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Nome:{{nome || '?'}}</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input type="text" placeholder="Awesome Input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input
+        type="text"
+        [(ngModel)]="nome"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+<!--inicio form-->
+  <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+
+    
+  </form>
+<!--fim form-->
+</ion-content>

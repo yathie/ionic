@@ -59,6 +59,12 @@ export class InicioPage implements OnInit {
       nome:"Infinite Scroll",
       irPara:"/scroll-infinito",
     },
+    {
+      icon:"star",
+      nome:"Input",
+      irPara:"/input",
+    },
+
   ]
 
   constructor() { }
