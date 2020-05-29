@@ -8,13 +8,16 @@
 <ion-content>
 
   <ion-list>
+   
     <ion-list-header>
       <ion-label>Nome:{{nome || '?'}}</ion-label>
     </ion-list-header>
+    <!--input um-->
     <ion-item>
       <ion-label>Nome</ion-label>
       <ion-input type="text" placeholder="Awesome Input"></ion-input>
     </ion-item>
+    <!--input dois-->
     <ion-item>
       <ion-label position="floating">Nome</ion-label>
       <ion-input
@@ -22,10 +25,52 @@
         [(ngModel)]="nome"
       ></ion-input>
     </ion-item>
+
   </ion-list>
+
 <!--inicio form-->
   <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
 
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Formulario : Válido {{formulario.valid}}</ion-label>
+      </ion-list-header>
+      <!--usuario email-->
+      <ion-item>
+        <ion-label position="floating">email</ion-label>
+        <!--pattern do email eh uma validacao que nos 
+        permite saber se o que foi digitado eh valido ou nao 
+      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+      -->
+        <ion-input
+          type="email"
+          name="email"
+          [(ngModel)]="usuario.email"
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          required
+        ></ion-input>
+      </ion-item>
+      <!--senha-->
+      <ion-item>
+        <ion-label position="floating">senha</ion-label>
+        <!--pattern do email eh uma validacao que nos 
+        permite saber se o que foi digitado eh valido ou nao 
+      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+      -->
+        <ion-input
+          type="password"
+          name="senha"
+          [(ngModel)]="usuario.senha"
+          required
+        ></ion-input>
+      </ion-item>
+      <!--botao enviar-->
+      <ion-button
+        expand="full"
+        type="submit" 
+        [disabled]="formulario.invalid"       
+      >enviar</ion-button>
+    </ion-list>
     
   </form>
 <!--fim form-->

@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputPage implements OnInit {
 
-  nome:string
+  nome:string;
+  usuario={
+    email:'',
+    senha:''
+  }
 
   constructor() { }
 
@@ -15,7 +19,8 @@ export class InputPage implements OnInit {
   }
 
   onSubmitTemplate(){
-    console.log("form enviado")
+    console.log("form enviado");
+    console.log(this.usuario);
   }
 
 }
