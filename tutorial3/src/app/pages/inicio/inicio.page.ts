@@ -64,6 +64,11 @@ export class InicioPage implements OnInit {
       nome:"Input",
       irPara:"/input",
     },
+    {
+      icon:"list",
+      nome:"List",
+      irPara:"/lista",
+    },
 
   ]
 
