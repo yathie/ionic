@@ -6,7 +6,7 @@
 <app-header titulo= "list - sliding"></app-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list #lista>
     <ion-item>
       <ion-label>
         <h3>Awesome Label</h3>
@@ -14,5 +14,43 @@
       </ion-label>
       <ion-label slot="end" class="ion-text-right">Label</ion-label>
     </ion-item>
+
+    <!--inicio item sliding-->
+    <ion-item-sliding *ngFor="let u of usuarios | async">
+
+      <!--item-->
+      <ion-item>
+        <ion-label>
+          <h3>{{u.name}}</h3>
+          <p>{{u.email}}</p>
+        </ion-label>
+        <ion-label slot="end" class="ion-text-right">{{u.phone}}</ion-label>
+      </ion-item>
+      
+      <!--opcoes ao deslizar -->
+      <ion-item-options side="start">
+        <ion-item-option color="primary" (click)="favorite(u)">Favorite</ion-item-option>
+        <ion-item-option color="warning" (click)="compartilhar(u)">Compartilhar</ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="end">
+        <ion-item-option color="success" (click)="naoLido(u)">não lido</ion-item-option>
+      </ion-item-options>
+      <!--
+      <ion-item-options side="start">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="end">
+        <ion-item-option color="danger">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+      -->
+    </ion-item-sliding>
+    <!--fim item sliding-->
   </ion-list>
 </ion-content>

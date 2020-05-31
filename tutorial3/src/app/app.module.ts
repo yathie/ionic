@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 //import { ComponentsModule } from './components/components.module';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -19,6 +19,10 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     //importado o modulo dos componentes criados
     //ComponentsModule,
+    
+    //modulo para requisiçoes http
+    HttpClientModule,
+
   ],
   providers: [
     StatusBar,
