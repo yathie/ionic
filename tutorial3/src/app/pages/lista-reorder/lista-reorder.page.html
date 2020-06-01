@@ -1,0 +1,23 @@
+<!--
+  importar ComponentsModule em alert.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "list - reorder"></app-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-reorder-group (ionItemReorder)="doReorder($event)" disabled="false">
+      
+      <ion-item *ngFor="let s of sabores">
+        <ion-label>{{s}}</ion-label>
+        <!--botao para poder mover o item-->
+        <ion-reorder slot="end"> 
+        </ion-reorder>
+      </ion-item> 
+
+    </ion-reorder-group>
+    
+  </ion-list>
+</ion-content>

@@ -66,8 +66,13 @@ export class InicioPage implements OnInit {
     },
     {
       icon:"list",
-      nome:"List",
+      nome:"List-slinding",
       irPara:"/lista",
+    },
+    {
+      icon:"list",
+      nome:"List-reorder",
+      irPara:"/lista-reorder",
     },
 
   ]
