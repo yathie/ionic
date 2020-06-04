@@ -74,6 +74,11 @@ export class InicioPage implements OnInit {
       nome:"List-reorder",
       irPara:"/lista-reorder",
     },
+    {
+      icon:"refresh-circle",
+      nome:"Loading",
+      irPara:"/load",
+    },
 
   ]
 
