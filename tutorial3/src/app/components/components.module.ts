@@ -2,12 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
+//menu
+import { MenuComponent } from './menu/menu.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    //menu
+    MenuComponent
   ],
   imports: [
     CommonModule,
@@ -16,9 +20,10 @@ import { IonicModule } from '@ionic/angular';
   ],
   //acrescentado o export do modulo do componente header criado
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    //menu
+    MenuComponent
   ]
   
 })
 export class ComponentsModule { }
-//1:05

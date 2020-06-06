@@ -1,3 +1,11 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!--tag do menu feito por mim, estah em componenets-->
+  <app-menu></app-menu>
+
+  <!--
+    *para funcionar, precisa colocar o 'contentId'
+  do menu (-> components/menu) no 'id' 
+    *o menu esta em todas as paginas
+  -->
+  <ion-router-outlet id="main_principal"></ion-router-outlet>
 </ion-app>

@@ -1,5 +1,26 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
+
+    <!--botao para aparecer menu lateral
+    nao precisa mais ficar deslizando, mas
+  deslizar ainda funciona tbm-->
+    <ion-buttons slot="start">
+      <!--opcao 1 de botao para menu-->
+      <!--<ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" 
+                  name="menu"
+                  color="danger"></ion-icon>
+      </ion-button>
+    -->
+      <!--opcao 2 de botao para menu-->
+      <ion-menu-button menu="first"
+                       color="warning">
+      </ion-menu-button>
+    
+    </ion-buttons>
+
+
+
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
