@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 //menu
 import { MenuComponent } from './menu/menu.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,8 +16,11 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     CommonModule,
-    //imprtar os componentes do ionic para o header component funcionar
+    //importar os componentes do ionic para o header component funcionar
     IonicModule,
+    //para o [routerLink]no html funcionar
+    RouterModule,
+
   ],
   //acrescentado o export do modulo do componente header criado
   exports:[

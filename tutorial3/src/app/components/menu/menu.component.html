@@ -15,11 +15,21 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+
+        <!--ion-menu-toggle> serve para 
+        o menu recuar apos
+      ser clicado algum item.
+    sem este, o menu fica aparecendo-->
+        <ion-menu-toggle>
+          <!--importar RouterModule em 
+          components/components.module.ts-->
+          <ion-item *ngFor="let c of componentes | async"
+                    [routerLink]="c.irPara" >
+            <ion-icon slot="start" [name]="c.icon"></ion-icon>
+            <ion-label>{{c.nome}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        
       </ion-list>
     </ion-content>
   </ion-menu>

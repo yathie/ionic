@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Componente } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +16,9 @@ export class Data1Service {
   importar Data1Service no arquivo.page.ts que ira utiliza-lo*/
   getUsers(){
     return this.http.get('https://jsonplaceholder.typicode.com/users')
+  }
+
+  getMenuOps(){
+    return this.http.get<Componente[]>('assets/data/menu.json')
   }
 }
