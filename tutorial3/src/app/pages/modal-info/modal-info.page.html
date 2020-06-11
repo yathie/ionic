@@ -1,0 +1,17 @@
+<!--modal que vai ser chamado-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal-info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="sair()" expand="block" fill="clear" shape="round">
+    sair
+  </ion-button>
+  <ion-button (click)="sairComArgs()" expand="block" fill="clear" shape="round">
+    sair com argumentos
+  </ion-button>
+
+  <h4 class="ion-text-center">{{fruta}} {{cor}}</h4>
+</ion-content>

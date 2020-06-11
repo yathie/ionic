@@ -67,6 +67,15 @@ const routes: Routes = [
     path: 'load',
     loadChildren: () => import('./pages/load/load.module').then( m => m.LoadPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  /* modal nao eh uma pagina navegavel
+  {
+    path: 'modal-info',
+    loadChildren: () => import('./pages/modal-info/modal-info.module').then( m => m.ModalInfoPageModule)
+  },*/
 ];
 
 @NgModule({

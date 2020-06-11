@@ -68,6 +68,11 @@
       "icon":"refresh-circle",
       "nome":"Loading",
       "irPara":"/load"
+    },
+    {
+      "icon":"modal",
+      "nome":"Modal",
+      "irPara":"/modal"
     }
 
   ]

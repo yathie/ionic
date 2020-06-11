@@ -1,0 +1,18 @@
+<!--pagina que vai lançar o modal-->
+
+<!--
+  importar ComponentsModule em modal.modules.ts
+  (acho q nao precisa)importar ComponentsModule em app.module.ts
+  export do header component em components.module.ts
+-->
+<app-header titulo= "modal"></app-header>
+
+<ion-content>
+
+  <ion-button (click)="abrirModal()" 
+              expand="block" 
+              fill="clear" 
+              shape="round">
+    Abrir modal
+  </ion-button>
+</ion-content>
